@@ -1,0 +1,33 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+
+target 'app3shopping' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for app3shopping
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  target 'app3shoppingTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'app3shopping-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for app3shopping-tvOS
+
+  target 'app3shopping-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
